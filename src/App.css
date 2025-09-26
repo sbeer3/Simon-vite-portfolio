@@ -1,0 +1,146 @@
+#root {
+  width: 100% !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.Overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 10 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: white !important;
+  text-align: center !important;
+  pointer-events: none !important;
+}
+
+.header-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+} 
+
+
+.App {
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  /* background: transparent !important; */
+}
+
+
+/*Themes for components */
+
+.portfolio-selector-content {
+  background-color: rgba(255, 255, 255, 0.356);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: black;
+}
+.portfolio-selector-value {
+  color: black;
+}
+.portfolio-selector-label {
+  color: black;
+}
+/*END COMPONENT THEMES*/
+
+/*Containers for positioning*/
+.selector-container {
+  position: absolute !important;
+  top: 1rem !important;
+  /* right: 1rem !important; */
+  z-index: 50 !important;
+  pointer-events: auto !important;
+}
+.sidebar-trigger-container {
+  position: absolute !important;
+  top: 1rem !important;
+  left: 1rem !important;
+  z-index: 50 !important;
+  pointer-events: auto !important;
+}
+.sidebar-trigger-container button,
+[data-slot="select-trigger"] {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+/*END CONTAINERS*/
+
+/* Enable pointer events for interactive elements inside overlay */
+.Overlay [data-slot="select"],
+.Overlay [data-slot="select-trigger"],
+.Overlay [data-slot="select-content"],
+.Overlay button,
+.Overlay input,
+.Overlay a {
+  pointer-events: auto !important;
+}
+
+[data-sidebar="sidebar"] {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.background-dither {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
