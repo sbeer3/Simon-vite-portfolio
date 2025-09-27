@@ -20,10 +20,10 @@ function App(): React.JSX.Element {
       const renderScene = () => {
     switch(selectedScene) {
       // case 'portfolio': return <PortfolioScene />;
-      case 'about': return <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}><AboutScene /></FadeContent>;
-      case 'game-development': return <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}><GameDevScene /></FadeContent>;
-      case 'software-engineering': return <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}><SoftwareEngineerScene /></FadeContent>;
-      case 'photography': return <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}><PhotographyScene /></FadeContent>;
+      case 'about': return <AboutScene />;
+      case 'game-development': return <GameDevScene />;
+      case 'software-engineering': return <SoftwareEngineerScene />;
+      case 'photography': return <PhotographyScene />;
       default: return <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}><DefaultScene /></FadeContent>;
     }
   };

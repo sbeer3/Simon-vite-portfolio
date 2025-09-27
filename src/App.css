@@ -94,6 +94,27 @@
 .portfolio-selector-label {
   color: black;
 }
+
+.about-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(0, 0, 0, 0.446);
+  color: rgb(0, 0, 0);
+  width: 80vw;
+  height: 75vh;
+}
+
+.about-card .about-image {
+  border-radius: 0.5rem;
+  width: 50rem;
+  height: 25rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.about-card .card-description {
+  color: #000;
+}
 /*END COMPONENT THEMES*/
 
 /*Containers for positioning*/

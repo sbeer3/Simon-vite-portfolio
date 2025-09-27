@@ -16,7 +16,7 @@ const PortfolioSelector = ({ onValueChange }: PortfolioSelectorProps) => {
     
   return (
 <Select onValueChange={onValueChange}>
-  <SelectTrigger className="w-[185px] portfolio-selector-value">
+  <SelectTrigger className="w-[190px] portfolio-selector-value">
     <SelectValue placeholder="Choose a Category" />
   </SelectTrigger>
   <SelectContent className="portfolio-selector-content">
