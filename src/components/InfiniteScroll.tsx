@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, ReactNode } from 'react';
+import React, { useRef, useEffect, type ReactNode } from 'react';
 import { gsap } from 'gsap';
 import { Observer } from 'gsap/Observer';
 import './InfiniteScroll.css';

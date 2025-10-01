@@ -1,11 +1,7 @@
 import FadeContent from "../animations/FadeContent";
-import { FiExternalLink } from "react-icons/fi";
 import {
   Card,
-  CardAction,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "../components/ui/card"

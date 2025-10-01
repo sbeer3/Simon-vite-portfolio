@@ -9,7 +9,6 @@ import Layout from './components/Layouts/Layout';
 import DefaultScene from './scenes/DefaultScene';
 import AboutScene from './scenes/AboutScene';
 import SoftwareEngineerScene from './scenes/SoftwareEngineerScene';
-import PhotographyScene from './scenes/PhotographyScene';
 import GameDevScene from './scenes/GameDevScene';
 
 //Animations

@@ -1,9 +1,5 @@
 import React from 'react';
 import '../../App.css';
-import { SidebarProvider, SidebarTrigger } from "../../components/ui/sidebar"
-import { AppSidebar } from "../../components/ui/app-sidebar"
-
-
 
 import Dither from '../../backgrounds/Dither';
 
