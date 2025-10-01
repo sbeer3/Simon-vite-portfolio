@@ -25,7 +25,7 @@ const PortfolioSelector = ({ onValueChange }: PortfolioSelectorProps) => {
           <SelectItem value="about">About</SelectItem>
           <SelectItem value="software-engineering">Software Engineering</SelectItem>
           <SelectItem value="game-development">Game Development</SelectItem>
-          <SelectItem value="photography">Photography</SelectItem>
+          {/* <SelectItem value="photography">Photography</SelectItem> */}
         </SelectGroup>
   </SelectContent>
 </Select>

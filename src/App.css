@@ -104,6 +104,48 @@
   height: 75vh;
 }
 
+.software-portfolio-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(0, 0, 0, 0.446);
+  color: rgb(0, 0, 0);
+  width: 80vw;
+  height: 60vh;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.software-portfolio-card .software-card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #000;
+  line-height: 1.3;
+}
+
+.software-portfolio-card .software-card-subtitle {
+  font-size: .75rem;
+  font-weight: bold;
+  text-align: left;
+  color: #928a8a;
+}
+
+.software-portfolio-card .software-card-content {
+  overflow-y: auto;
+  padding-right: 1rem;
+  font-size: 1.25rem;
+  text-align: left;
+  font-weight: normal;
+}
+
+.software-portfolio-card .software-card-content p {
+  font-weight: normal;
+}
+
 .about-card .about-image {
   border-radius: 0.5rem;
   width: 50rem;
@@ -114,6 +156,56 @@
 
 .about-card .card-description {
   color: #000;
+}
+
+/* Infinite scroll styling fixes */
+.infinite-scroll-item {
+  border: none !important;
+  background: transparent !important;
+  padding: 0.5rem !important;
+}
+
+.infinite-scroll-item .software-portfolio-card {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+
+.game-dev-portfolio-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(0, 0, 0, 0.446);
+  color: rgb(0, 0, 0);
+  width: 80vw;
+  height: 60vh;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.game-dev-portfolio-card .game-dev-card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #000;
+  line-height: 1.3;
+}
+
+.game-dev-portfolio-card .game-dev-card-subtitle {
+  font-size: .75rem;
+  font-weight: bold;
+  text-align: left;
+  color: #928a8a;
+}
+
+.game-dev-portfolio-card .game-dev-card-content {
+  height: calc(60vh - 6rem);
+  overflow-y: auto;
+  padding-right: 1rem;
+  font-size: .875rem;
+  text-align: left;
 }
 /*END COMPONENT THEMES*/
 
@@ -141,6 +233,11 @@
 /*END CONTAINERS*/
 
 /* Enable pointer events for interactive elements inside overlay */
+.Overlay .infinite-scroll-wrapper,
+.Overlay .infinite-scroll-container,
+.Overlay .software-engineer-scene,
+.Overlay .game-dev-scene,
+.Overlay video,
 .Overlay [data-slot="select"],
 .Overlay [data-slot="select-trigger"],
 .Overlay [data-slot="select-content"],

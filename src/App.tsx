@@ -23,7 +23,7 @@ function App(): React.JSX.Element {
       case 'about': return <AboutScene />;
       case 'game-development': return <GameDevScene />;
       case 'software-engineering': return <SoftwareEngineerScene />;
-      case 'photography': return <PhotographyScene />;
+      // case 'photography': return <PhotographyScene />;
       default: return <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}><DefaultScene /></FadeContent>;
     }
   };

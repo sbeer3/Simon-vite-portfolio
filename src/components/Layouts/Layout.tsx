@@ -27,8 +27,8 @@ const Layout: React.FC<LayoutProps> = ({
     const colorMap: Record<string, [number, number, number]> = {
       default: [0.5, 0.5, 0.5],                   
       about: [0.5, 0.6, 0.6],                      
-      'game-development': [0.5, 0.5, 0.6],         
-      'software-engineering': [0.5, 0.6, 0.5],     
+      'game-development': [0.5, 0.8, 0.5],         
+      'software-engineering': [0.5, 0.5, 0.6],     
       photography: [0.6, 0.5, 0.5],              
     };
     return colorMap[scene] || colorMap.default;
