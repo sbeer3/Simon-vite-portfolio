@@ -27,20 +27,15 @@ const GameDevScene = () => {
                     </div>
                     
                     <div className="game-dev-video flex-shrink-0" style={{pointerEvents: 'auto'}}>
-                        <video 
+                        <iframe 
+                            src="https://drive.google.com/file/d/1lyzwFsZI7s__oPIMbREm5-TM84gjYn3E/preview" 
                             width="400" 
                             height="300" 
-                            controls 
-                            autoPlay 
-                            muted 
-                            loop
+                            allow="autoplay"
                             className="rounded-lg shadow-lg"
-                            style={{pointerEvents: 'auto'}}
-                        >
-                            <source src="./game-demo.mov" type="video/quicktime" />
-                            <source src="./game-demo.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+                            style={{pointerEvents: 'auto', border: 'none'}}
+                            title="Project Red Escape Demo"
+                        ></iframe>
                     </div>
                 </CardContent>
                 </Card>
