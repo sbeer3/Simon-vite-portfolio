@@ -83,9 +83,8 @@ const AboutScene = () => {
                         </p>
                         <br />
                         <p className="text-lg text-left text-wrap">
-                        Away from the computer, I enjoy hiking, photography and playing video games. A lot of my time is spent 
-                        outdoors climbing the 14ers of Colorado and capturing the beauty of nature and my friends through my camera.
-
+                        Away from the computer, I enjoy hiking, photography and playing video games. I spend a lot of my time outdoors
+                        climbing Colorado's 14ers and taking landscape photos of the scenery around them.
                         </p>
                         <br />
                         <p className="text-xs text-left text-wrap">
