@@ -19,6 +19,10 @@ import {
 } from "react-icons/si";
 
 import InfiniteScroll from '../components/InfiniteScroll';
+
+import { toast } from "sonner"
+import { useEffect } from "react";
+
   
 const items = [
   { content: 
@@ -92,6 +96,12 @@ const items = [
 ];
 
 const SoftwareEngineerScene = () => {
+  
+  useEffect(() => {
+    toast("Swipe to see my projects!")
+    console.log('i fire once');
+  }, [])
+  
     return (
 <AnimatedContent
   distance={150}
@@ -108,8 +118,7 @@ const SoftwareEngineerScene = () => {
                         items={items}
                         autoplay={false}
                         width="90vw"
-                        itemMinHeight={400}
-                        negativeMargin={"-5em"}
+                        itemMinHeight={300}
                     />
                 </div>
             </div>

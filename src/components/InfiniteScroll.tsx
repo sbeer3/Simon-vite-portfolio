@@ -61,16 +61,20 @@ const InfiniteScroll: React.FC<InfiniteScrollProps> = ({
     const totalItemHeight = itemHeight + itemMarginTop;
     const totalHeight = itemHeight * items.length + itemMarginTop * (items.length - 1);
 
-    const wrapFn = gsap.utils.wrap(-totalHeight, totalHeight);
+    // Calculate offset to account for gradient overlay (25% of container height)
+    const containerHeight = container.offsetHeight;
+    const gradientOffset = containerHeight * 0.25;
+
+    const wrapFn = gsap.utils.wrap(-totalHeight - gradientOffset, totalHeight + gradientOffset);
 
     divItems.forEach((child, i) => {
-      const y = i * totalItemHeight;
+      const y = i * totalItemHeight + gradientOffset;
       gsap.set(child, { y });
     });
 
     const observer = Observer.create({
       target: container,
-      type: 'wheel,touch,pointer',
+      type: 'touch,pointer',
       preventDefault: true,
       onPress: ({ target }) => {
         (target as HTMLElement).style.cursor = 'grabbing';

@@ -217,6 +217,7 @@
   z-index: 50 !important;
   pointer-events: auto !important;
 }
+
 .sidebar-trigger-container {
   position: absolute !important;
   top: 1rem !important;
