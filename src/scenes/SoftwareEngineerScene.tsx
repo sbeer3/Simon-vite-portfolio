@@ -4,7 +4,7 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card"
-import FadeContent from "../animations/FadeContent";
+import AnimatedContent from "../animations/AnimateContent";
 
 import { FiExternalLink } from "react-icons/fi";
 import { 
@@ -93,8 +93,16 @@ const items = [
 
 const SoftwareEngineerScene = () => {
     return (
-        <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
-            <div className="software-engineer-scene">
+<AnimatedContent
+  distance={150}
+  direction="vertical"
+  reverse={false}
+  duration={1.2}
+  initialOpacity={0.0}
+  animateOpacity
+  scale={1.1}
+  threshold={0.2}
+>            <div className="software-engineer-scene">
                 <div style={{height: '85vh', width: '100%', position: 'relative'}}>
                     <InfiniteScroll
                         items={items}
@@ -105,7 +113,7 @@ const SoftwareEngineerScene = () => {
                     />
                 </div>
             </div>
-        </FadeContent>
+        </AnimatedContent>
     );
 }
 
